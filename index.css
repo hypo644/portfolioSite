@@ -1,0 +1,65 @@
+/* Style sheet for index.html */
+
+html, body, header, nav, main, section, footer {
+	display: flex;
+	/*height: auto;*/
+}
+
+nav, footer {
+	border: 1px solid black;
+	justify-content: center;
+}
+/*
+header {
+	justify-content: flex-end;
+	text-align: right;
+}
+*/
+.navDiv {
+	border: 1px solid darkgrey;
+}
+
+div a {
+	text-decoration: none;
+}
+
+html, body {
+	min-height: 100vh;
+	margin: 0;
+}
+
+header, nav, main, .project, section, footer {
+	padding: 10px;
+}
+/*
+header, nav, main, footer {
+	height: auto;
+}
+*/
+html, body, main, section {
+	flex-direction: column;
+}
+
+.project {
+	margin-bottom: 20px;
+}
+
+nav {
+	flex-direction: row;
+}
+
+nav, footer, .project {
+	background-color: grey;
+}
+
+header, main, section {
+	background-color: lightgrey;
+}
+
+header {
+	font-size: 50%;
+}
+
+main {
+	flex: 1;
+}
