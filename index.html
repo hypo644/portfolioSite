@@ -7,41 +7,118 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Logan's Portfolio</title>
 		<link href="index.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Dosis:800|Gidugu" rel="stylesheet">
 	</head>
 	
 	<body>
 	
-		<header role="banner" class="header">
-			<h1>Hello! I'm Logan,<br>a full stack web developer<br>with an eye for detail<br>and a drive for perfection.</h1>
+		<header role="banner" id="jsHeader">
+			
+			<h1>Salutations!<br>I am Logan,<br>a full stack web developer<br>with an eye for detail<br>and a drive for perfection.</h1>
+			
+			<nav role="navigation">
+				
+				<div class="navDiv1">
+					<a href="#jsBio" class="jsNavLink">Bio</a>
+				</div>
+				
+				<div class="navSep">
+					|
+				</div>
+				
+				<div class="navDiv2">
+					<a href="#jsProjects" class="jsNavLink">Projects</a>
+				</div>
+				
+				<div class="navSep">
+					|
+				</div>
+				
+				<div class="navDiv3">
+					<a href="#jsContact" class="jsNavLink">Contact</a>
+				</div>
+			
+			</nav>
+		
 		</header>
 		
-		<nav role="navigation" class="nav">
-			
-			<div class="navDiv"><a href="projects.html">Projects</a></div>
-			
-		</nav>
+		<div class="borderBox">
 		
-		<main role="main" class="main">
+			<main role="main">
 			
-			<h2>About Me:</h2>
+				<h2 id="jsBio">About Me:</h2>
 			
-			<p>I'm a prospective graduate of Thinkful's Full Stack Web Development bootcamp course. I've held a fascination with computers and the Internet in general since my earliest remembered days. I love the ability to write clean, structured code that transforms into a beautiful landscape onscreen. I strive for perfection in all that I do, and web development projects are a wonderful opportunity to get every last detail accounted for within a creation. Outside of coding, I enjoy nature, reading, and catching up on current events.</p>
+				<p>I'm a prospective graduate of Thinkful's Full Stack Web Development bootcamp course. I've held a fascination with computers and the Internet in general since my earliest remembered days. I love the ability to write clean, structured code that transforms into a beautiful landscape onscreen. I strive for perfection in all that I do, and web development projects are a wonderful opportunity to get every last detail accounted for within a creation. Outside of coding, I enjoy nature, reading, and catching up on current events.</p>
 		
-		</main>
+				<div class="heroImgDiv">
+					<img class="heroImg" src="Media/heroImgTiny.jpg" alt="Logan Ziegler"/>
+				</div>
+				
+				<a href="#jsHeader" class="jsTopLink">Back to top</a>
+				<hr>
+				
+				<!-- ********************************* -->
+				
+				<h2 id="jsProjects">Projects:</h2>
 		
-		<section role="contact" class="contact">
-		
-			<h2>Contact:</h2>
+				<div class="projectImgDiv">
+					<img class="projectImg" src="Media/quizAppPicTiny.JPG" alt="Quiz App screenshot"/>
+				</div>
+				
+				<div class="project">
+					<h3>jQuery-Based Quiz App</h3>
+					<p>Technologies used: HTML, CSS, JavaScript, jQuery</p>
+					<div class="projectLinks">
+						<a href="https://hypo644.github.io/quizAppSonoranDesert/">Live App</a>
+						&ensp; | &ensp;
+						<a href="https://github.com/hypo644/quizAppSonoranDesert">Repo</a>
+					</div>
+					<p>This was a quiz application that I developed during my time at Thinkful's bootcamp program. The topic is the saguaro cactus of the Sonoran Desert; I kept color schemes consistent with a largely brown landscape theme. Apart from the landing page, each page of the application is created and rendered through JavaScript and jQuery on a base of HTML and CSS. I made extensive use of single-purpose functions to create dynamic screens for every page of the quiz.</p>
+				</div>
+				
+				<div class="projectImgDiv">
+					<img class="projectImg" src="Media/resumeSitePicTiny.JPG" alt="Resume Website screenshot">
+				</div>
+				
+				<div class="project">
+					<h3>Resume Website for Client</h3>
+					<p>Technologies used: HTML, CSS</p>
+					<div class="projectLinks">
+						<a href="https://hypo644.github.io/Website-His/">Live Site</a>
+						&ensp; | &ensp;
+						<a href="https://github.com/hypo644/Website-His">Repo</a>
+					</div>
+					<p>This is a resume website that I am currently developing for an acquaintance to update his outdated original one. Because he has amassed over 20 years' worth of experience and projects, I placed each section on its own page. For the gallery section, I implemented a variety of methods to correctly render both images and videos in an orderly, visually-appealing way.</p>
+				</div>
+				
+				<a href="#jsHeader" class="jsTopLink">Back to top</a>
+				<hr>
+				
+				<!-- ********************************* -->
+				
+				<h2 id="jsContact">Contact:</h2>
 			
-			<ul>
-				<li>skyofblue22@yahoo.com</li>
-				<li><a href="https://www.linkedin.com/in/logan-ziegler-b27390105/">LinkedIn</a></li>
-				<li><a href="https://github.com/hypo644">GitHub</a></li>
-			</ul>
-			
-		</section>
+				<ul class="ulContact">
+					<li>skyofblue22@yahoo.com</li>
+					<li><a href="https://www.linkedin.com/in/logan-ziegler-b27390105/">LinkedIn</a></li>
+					<li><a href="https://github.com/hypo644">GitHub</a></li>
+				</ul>
+				
+				<a href="#jsHeader" class="jsTopLink">Back to top</a>
 		
-		<footer role="contentinfo" class="footer">Copyright of Logan Ziegler</footer>
+			</main>
+		
+			<footer role="contentinfo" class="footer">
+				Website design by Logan Ziegler<br>&copy;
+				<script type="text/javascript">document.write(new Date().getFullYear());</script>
+			</footer>
+		
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 	
 	</body>
 

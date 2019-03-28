@@ -17,40 +17,46 @@ body {
 
 header {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	text-align: center;
-	background: rgba(0, 0, 0, .2) url('Media/heroBackground.JPG') no-repeat center;
+	flex-direction: column;
+	background: rgba(0, 0, 0, .2) url('Media/P9010085Tiny.JPG') no-repeat center;
 	background-size: cover;
+	background-position: 40% 50%;
 	padding: 10px;
-	text-shadow: 0 1px 0 white;
+	color: white;
+	min-height: 60vh;
+	height: 100vh;
 }
 
 h1 {
-	/* font-weight: bold; */
-	font: 5vw Philosopher, Acme, Vollkdrn, Impact, Quando, Palatino, sans-serif;
+	font-size: 5.5vw;
+	font-family: 'Berkshire Swash', cursive, sans-serif;
+	font-weight: 700;
 	letter-spacing: .2em;
+	text-shadow: 1px 1px 1px black;
 }
 
+.borderBox {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	border: 5px solid;
+	border-image: linear-gradient(to left, #da22ff, #9733ee) 30;
+}
 
 nav {
-	border: 1px solid black;
-	/* justify-content: center; */
-	justify-content: flex-end;
 	display: flex;
 	flex-direction: row;
-	background-color: #003D66;
+	justify-content: space-between;
 	padding: 10px;
-	font: caption;
-	font-size: 5vw;
-}
-
-.navDiv {
-	/* border: 1px solid darkgrey; */
-	border-radius: 4px;
-	width: 30%;
+	font-family: 'Dosis', sans-serif;
+	font-size: 8vw;
+	text-shadow: 2px 2px 2px black;
 	text-align: center;
-	/* background-color: #013B7F; beige; #F5F5DC; */
-	/* background-color: white; */
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 nav div a {
@@ -64,53 +70,125 @@ nav div a:visited {
 
 main {
 	display: flex;
-	flex: 1;
 	flex-direction: column;
-	/* background-color: #E4F0FF; */
-	background-color: white;
 	padding: 10px;
+	width: 80%;
+	margin-bottom: 20px;
+	font-family: 'Gidugu', sans-serif;
+	line-height: 1em;
+	font-size: 1em;
+	color: #003D66;
 }
 
-section {
+main h2 {
+	margin: 0 auto 0 auto;
+}
+
+h2 {
+	text-align: center;
+}
+
+.heroImgDiv {
+	align-self: center;
+}
+
+.heroImg {
+	height: 120px;
+	width: auto;
+	border: 3px solid #003D66;
+	border-radius: 12px;
+}
+
+hr {
+    margin: 15px auto;
+	width: 100%; 
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}
+
+.projectImgDiv {
 	display: flex;
-	flex-direction: column;
-	background-color: white;
-	padding: 10px;
+	justify-content: center;
 }
 
-.contact ul {
+.projectImg {
+	height: 65vh;
+	width: auto;
+	margin-top: 25px;
+}
+
+.projectLinks {
+	display: flex;
+	flex-direction: row;
+}
+
+.ulContact {
 	list-style: none;
 	line-height: 2em;
+	text-align: center;
+	padding: 0;
 }
 
 .project {
-	margin-bottom: 20px;
-	/* background-color: white; */
 	padding: 10px;
-	border: 3px solid #003D66;
+}
+
+.jsTopLink {
+	align-self: flex-end;
+	font-style: italic;
+	text-decoration: none;
 }
 
 footer {
 	display: flex;
-	background-color: #003D66;
 	padding: 10px;
-	border: 1px solid black;
 	justify-content: center;
-	color: white;
+	text-align: center;
+	color: black;
+	font-family: 'Dosis', sans-serif;
+	font-size: .7em;
 }
 
 @media screen and (min-width: 1024px) {
 	
 	h1 {
-		font-size: 1.5vw;
+		/* Previous: 5.5vw */
+		font-size: 3vw;
+		/* Previous: 1px 1px 1px */
+		text-shadow: 2px 2px 2px black;
 	}
 	
 	nav {
-		font-size: 2vw;
+		/* Previous: 8vw */
+		font-size: 3vw;
 	}
 	
 	nav div a {
+		/* Previous: N/A */
 		width: 100%;
 	}
-
+	
+	.borderBox {
+		/* Previous: 5px */
+		border: 7px solid;
+		border-image: linear-gradient(to left, #da22ff, #9733ee) 30;
+	}
+	
+	main {
+		/* Previous: 1em */
+		line-height: 1.5em;
+		/* Previous: 1em */
+		font-size: 1.5em;
+	}
+	
+	.heroImg {
+		/* Previous: 120px */
+		height: 180px;
+	}
+	
+	footer {
+		/* Previous: .7em */
+		font-size: .8em;
+	}
 }
